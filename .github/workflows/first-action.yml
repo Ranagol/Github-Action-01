@@ -1,0 +1,11 @@
+name: First workflow
+on: workflow_dispatch # We can manually trigger this WF
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World"
+      - name: Print goodbye
+        run: echo "Done - bye!"
+      
